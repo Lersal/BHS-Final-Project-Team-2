@@ -1,9 +1,13 @@
+import CartUniqlo from "./carts/page";
 import AppLocation from "./maps/page";
 
 function App() {
   return (
     <>
-      <AppLocation />
+      {/* maps */}
+      {/* <AppLocation /> */}
+      {/* carts */}
+      <CartUniqlo />
     </>
   );
 }

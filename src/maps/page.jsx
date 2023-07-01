@@ -14,6 +14,7 @@ import { useCallback, useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { GrLocation, GrFormClose } from "react-icons/gr";
 import CardLocation from "../components/CardLocation";
+import Nametag from "../components/Nametag";
 
 function AppLocation() {
   const [isOpen, setIsOpen] = useState([
@@ -188,11 +189,7 @@ function AppLocation() {
   return (
     <div className="max-w-[1200px] mx-auto overflow-hidden">
       <div className="flex flex-col w-full px-3">
-        <div className="my-3">
-          <p className="text-xs font-light">
-            <span className="underline">UNIQLO</span> / Pencari lokasi toko
-          </p>
-        </div>
+        <Nametag name="Pencari lokasi toko" />
         <div className="my-3">
           <h1 className="text-2xl md:text-3xl font-medium">
             Pencari lokasi toko
