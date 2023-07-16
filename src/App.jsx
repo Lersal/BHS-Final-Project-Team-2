@@ -1,11 +1,19 @@
-import Home from "./pages/Home";
+import CartUniqlo from "./carts/page";
+import AppLocation from "./maps/page";
+import ProductsByID from "./products/id/page";
 
 function App() {
   return (
-  <div className="">
-    <Home />
-  </div>
-  )
+    <>
+      {/* maps */}
+      {/* <AppLocation /> */}
+
+      {/* carts */}
+      {/* <CartUniqlo /> */}
+
+      <ProductsByID />
+    </>
+  );
 }
 
 export default App;
