@@ -157,9 +157,9 @@ function ProductsByID() {
           text: `Desain yang menyenangkan ini menampilkan karakter Disney sedang
         berpesta dengan teman-teman baiknya dan musik yang bagus. Bagian dari
         koleksi desain orisinal, hanya di UNIQLO. <br />
-        <br />\
+        <br />
         Disney Good Vibes <br />
-        <br />\
+        <br />
         Ayo berpesta dengan karakter Disney dan sebarkan GOOD VIBES. Mickey
         sedang memainkan piringan musik sementara karakter Disney lainnya
         bersenang-senang. Desain ini dicetak pada T-shirt fit oversized untuk
