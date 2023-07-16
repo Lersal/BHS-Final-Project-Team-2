@@ -1,7 +1,17 @@
 import { useState } from "react";
 import { GrDown, GrFormNext, GrFormPrevious, GrUp } from "react-icons/gr";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
+CarouselProductsID.propTypes = {
+  dataImage: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      src: PropTypes.string,
+      select: PropTypes.bool,
+    })
+  ).isRequired,
+};
+
 function CarouselProductsID({ dataImage }) {
   const [incrementImg, setIncrementImg] = useState(0);
   const [imgSlide, setImgSlide] = useState(0);

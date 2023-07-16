@@ -1,4 +1,9 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
+
+Nametag.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
 function Nametag({ name }) {
   return (
     <div className="my-3">

@@ -1,16 +1,18 @@
 import { useState } from "react";
 import Nametag from "../../components/Nametag";
 import CarouselProductsID from "../../components/CarouselProductsID";
+import AccordionChakra from "../../components/Accordion";
 
 function ProductsByID() {
   // eslint-disable-next-line no-unused-vars
   const [dataProducts, setDataProducts] = useState([
+    // https://www.uniqlo.com/id/id/products/E462172-000?colorCode=COL09&sizeCode=SMA002
     {
       code: "462172",
       title: "UT Disney Good Vibes Lengan Pendek",
       price: 199000,
       isNew: true,
-      desc: "Sebuah karya seni spesial yang menggambarkan Mickey Mouse bersama teman-temannya mengikuti irama musik di sebuah pesta, telah hadir di UT!",
+      text: "Sebuah karya seni spesial yang menggambarkan Mickey Mouse bersama teman-temannya mengikuti irama musik di sebuah pesta, telah hadir di UT!",
       color: [
         // color pertama
         {
@@ -149,6 +151,36 @@ function ProductsByID() {
           select: false,
         },
       ],
+      deskripsi: [
+        {
+          title: "Ikhtisar",
+          text: `Desain yang menyenangkan ini menampilkan karakter Disney sedang
+        berpesta dengan teman-teman baiknya dan musik yang bagus. Bagian dari
+        koleksi desain orisinal, hanya di UNIQLO. <br />
+        <br />\
+        Disney Good Vibes <br />
+        <br />\
+        Ayo berpesta dengan karakter Disney dan sebarkan GOOD VIBES. Mickey
+        sedang memainkan piringan musik sementara karakter Disney lainnya
+        bersenang-senang. Desain ini dicetak pada T-shirt fit oversized untuk
+        kesan santai.
+        <br />
+        <br /> ©Disney`,
+        },
+        {
+          title: "Material",
+          text: `Kode Produk 462172 <br />
+          <br />
+          Harap dicatat bahwa produk ini mungkin memiliki ID produk yang
+          berbeda, meskipun itu adalah produk yang serupa. <br />
+          <br />
+          <b>DETAIL KAIN</b>
+          <br /> 100% Kapas <br /> <br /> <b>INSTRUKSI PENCUCIAN</b> <br />
+          Dicuci dengan mesin menggunakan air dingin, Tidak boleh dilakukan dry
+          clean, Keringkan dengan mesin pada suhu rendah. - Beberapa warna
+          produk mungkin tidak tersedia.`,
+        },
+      ],
     },
   ]);
 
@@ -168,6 +200,10 @@ function ProductsByID() {
                 <p className="text-sm">{dataProducts[0].code}</p>
               </div>
             </div>
+            <AccordionChakra
+              className="mt-4"
+              deskripsi={dataProducts[0].deskripsi}
+            />
           </div>
           <div className="flex flex-col w-full lg:w-[60%] px-4 mt-4 mb-16 lg:mb-0 lg:mt-0 lg:pl-16 bg-red-400"></div>
         </div>
