@@ -9,9 +9,9 @@ function App() {
       {/* <AppLocation /> */}
 
       {/* carts */}
-      {/* <CartUniqlo /> */}
+      <CartUniqlo />
 
-      <ProductsByID />
+      {/* <ProductsByID /> */}
     </>
   );
 }

@@ -35,7 +35,7 @@ function CarouselProductsID({ dataImage }) {
       if (idImg <= 0) {
         setImgProducts((prev) =>
           prev.map((item) =>
-            16 == item.id
+            dataImage.length == item.id
               ? { ...item, select: true }
               : { ...item, select: false }
           )
@@ -61,7 +61,7 @@ function CarouselProductsID({ dataImage }) {
   function rightSlide(idImg) {
     setTimeout(() => {
       //   console.log(idImg, "right");
-      if (idImg + 2 >= 17) {
+      if (idImg + 2 > dataImage.length) {
         setImgProducts((prev) =>
           prev.map((item) =>
             1 == item.id
@@ -107,7 +107,7 @@ function CarouselProductsID({ dataImage }) {
               </div>
             ))}
         </div>
-        <div className={`${imgProducts.length >= 12 ? "block" : "hidden"}`}>
+        <div className={`${imgProducts.length > 12 ? "block" : "hidden"}`}>
           <div className="mt-5">
             <hr className="h-0.5  bg-gray-100 border-0 rounded  dark:bg-gray-300" />
           </div>
