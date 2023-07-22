@@ -9,7 +9,7 @@ import "swiper/css";
 function Home() {
   return (
     <div>
-      {/* section 1 */}
+      {/* section 1 */}x
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -43,7 +43,6 @@ function Home() {
           />
         </SwiperSlide>
       </Swiper>
-
       {/* Section 2 */}
       <Swiper
         spaceBetween={50}
@@ -56,11 +55,14 @@ function Home() {
         <SwiperSlide>
           <div className="flex flex-row">
             <img
-              src="https://im.uniqlo.com/global-cms/spa/rese600012a790625fe6b620c115996045efr.jpg"
+              src="https://im.uniqlo.com/global-cms/spa/res18d928333f4ab87e0d783d7aa7581376fr.jpg"
               alt=""
               className="w-8/12 h-auto"
             />
-            <div className="w-4/12 h-auto bg-indigo-500">Test</div>
+            <div className="w-4/12 h-auto bg-indigo-500">
+              <h2>Menampilkan serial TV anime terkenal!</h2>
+              <div>My Hero Academia</div>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -90,7 +92,7 @@ function Home() {
           />
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 3 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -99,7 +101,6 @@ function Home() {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {/* Section 3 */}
         <SwiperSlide>
           <div className="relative">
             <img
@@ -194,7 +195,7 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 4 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -286,7 +287,7 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 5 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -377,7 +378,7 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 6 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -468,7 +469,7 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 7 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -502,7 +503,7 @@ function Home() {
           />
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 8 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -584,7 +585,7 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
-
+      {/* Section 9 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
