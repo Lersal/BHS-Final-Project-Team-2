@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Login () {
     return (
         <div className="border border-gray-300 m-20 flex md:flex-shrink-0">
@@ -23,13 +25,13 @@ function Login () {
       </div>
       {/* ketentuan & kebijakan */}
       <div className="mb-5 text-base underline font-bold flex flex-col">
-        <a href className>KETENTUAN PENGGUNAAN</a>
-        <a href className>KEBIJAKAN PRIVASI</a>
+        <Link className>KETENTUAN PENGGUNAAN</Link>
+        <Link className>KEBIJAKAN PRIVASI</Link>
       </div>
       <div className="mt-5 flex flex-col">
         <button className=" bg-black text-white text-xl font-bold py-2 px-10 mb-7 w-full"> <a href="login.php" /> MASUK </button>
         {/* lupa kata sandi */}
-        <a href className="underline"> Lupa Kata Sandi?</a>
+        <Link  className="underline"> Lupa Kata Sandi?</Link>
       </div>
     </form>
   </div>
@@ -39,7 +41,7 @@ function Login () {
   <div className="w-2/4 my-5 ">
     <h1 className="font-bold text-3xl mx-5 my-4 "> BUAT AKUN </h1>
     <p className="text-base mx-5 mt-6 mb-14 "> Jika Anda membuat akun, Anda bisa mendapatkan layanan yang dipersonalisasikan seperti melihat riwayat pembelian dan mendapatkan kupon diskon dengan keanggotaan Anda. Daftar hari ini, gratis!</p>
-    <a href className="border border-black py-2 px-10 mx-6 w-full bg-black text-white text-xl font-bold"> DAFTAR</a>
+    <Link to="/Register" className="border border-black py-2 px-10 mx-6 w-full bg-black text-white text-xl font-bold"> DAFTAR</Link>
   </div>
 </div>
 

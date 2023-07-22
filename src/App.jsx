@@ -1,9 +1,11 @@
-import Login from "./pages/Login";
+import React from "react";
+import RootRouter from "./router/index";
 
 function App() {
-  return <div className="">
-    <Login />
-  </div>;
+  return ( <div className="">
+    <RootRouter/>
+  </div>
+  )
 }
 
 export default App;
