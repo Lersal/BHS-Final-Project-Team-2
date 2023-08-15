@@ -4,64 +4,75 @@ import { Select } from "@chakra-ui/react";
 import { GrFormClose } from "react-icons/gr";
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import { formatCurrency } from "../utils/formatCurrency";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCart } from "../stores/slices/cartSlice";
 
 function CartUniqlo() {
+  const cartRx = useSelector((state) => state.cartSlice);
+
+  const dispatch = useDispatch();
+  // console.log(cartRx);
   const [totalCart, setTotalCart] = useState([
     {
       total_produk: 0,
       total_harga: 0,
+      ppn: 0,
     },
   ]);
-  const [dataCart, setDataCart] = useState([
-    {
-      id: 1,
-      title: "HEATTECH T-Shirt Fleece Kerah Turtle Lengan Panjang",
-      id_product: "449750",
-      warna: "68 BLUE",
-      size: "Wanita S",
-      price: 199000,
-      src: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/449750001/item/goods_68_449750001.jpg?width=250",
-      jumlah: 3,
-      select: {
-        active: false,
-      },
-    },
-    {
-      id: 2,
-      title: "Jeans Ultra Stretch",
-      id_product: "450242",
-      warna: "68 BLUE",
-      size: "Uniseks 38inch",
-      price: 599000,
-      src: "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/450242/item/idgoods_68_450242.jpg?width=250",
-      jumlah: 1,
-      select: {
-        active: false,
-      },
-    },
-    {
-      id: 3,
-      title: "Jaket AirSense (Ultra Light) Serupa Wol",
-      id_product: "455074",
-      warna: "69 NAVY",
-      size: "Pria S",
-      price: 899000,
-      src: "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/448034/item/idgoods_69_448034.jpg?width=250",
-      jumlah: 1,
-      select: {
-        active: false,
-      },
-    },
-  ]);
+
+  // const [dataCart, setDataCart] = useState([
+  //   {
+  //     id: 1,
+  //     title: "HEATTECH T-Shirt Fleece Kerah Turtle Lengan Panjang",
+  //     id_product: "449750",
+  //     warna: "68 BLUE",
+  //     size: "Wanita S",
+  //     price: 199000,
+  //     src: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/449750001/item/goods_68_449750001.jpg?width=250",
+  //     jumlah: 3,
+  //     select: {
+  //       active: false,
+  //     },
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Jeans Ultra Stretch",
+  //     id_product: "450242",
+  //     warna: "68 BLUE",
+  //     size: "Uniseks 38inch",
+  //     price: 599000,
+  //     src: "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/450242/item/idgoods_68_450242.jpg?width=250",
+  //     jumlah: 1,
+  //     select: {
+  //       active: false,
+  //     },
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Jaket AirSense (Ultra Light) Serupa Wol",
+  //     id_product: "455074",
+  //     warna: "69 NAVY",
+  //     size: "Pria S",
+  //     price: 899000,
+  //     src: "https://image.uniqlo.com/UQ/ST3/id/imagesgoods/448034/item/idgoods_69_448034.jpg?width=250",
+  //     jumlah: 1,
+  //     select: {
+  //       active: false,
+  //     },
+  //   },
+  // ]);
+
+  const [dataCart2, setDataCart2] = useState(cartRx.cart);
+
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef(null);
 
-  const handleSelectClick = (no) => {
+  const handleSelectClick = (targetSize, targetCode) => {
     setIsOpen(!isOpen);
-    setDataCart((prevData) => {
+    setDataCart2((prevData) => {
       return prevData.map((item) => {
-        if (item.id == no) {
+        if (item.size == targetSize && targetCode) {
           return {
             ...item,
             select: {
@@ -87,12 +98,12 @@ function CartUniqlo() {
   };
 
   const calculateTotalCart = () => {
-    const totalProduk = dataCart.reduce(
-      (acc, item) => acc + parseInt(item.jumlah),
+    const totalProduk = dataCart2.reduce(
+      (acc, item) => acc + parseInt(item.cartStock),
       0
     );
-    const totalHarga = dataCart.reduce(
-      (acc, item) => acc + item.price * parseInt(item.jumlah),
+    const totalHarga = dataCart2.reduce(
+      (acc, item) => acc + item.price * parseInt(item.cartStock),
       0
     );
 
@@ -104,13 +115,13 @@ function CartUniqlo() {
     ]);
   };
 
-  function changeJumlahCart(target, val) {
-    setDataCart((prevData) => {
+  function changeJumlahCart(targetSize, targetCode, val) {
+    setDataCart2((prevData) => {
       return prevData.map((item) => {
-        if (item.id == target) {
+        if (item.size == targetSize && item.code == targetCode) {
           return {
             ...item,
-            jumlah: val,
+            cartStock: val,
           };
         }
         return {
@@ -120,19 +131,23 @@ function CartUniqlo() {
     });
   }
 
-  function removeCart(target) {
-    return setDataCart((prevData) => {
-      return prevData.filter((item) => item.id != target);
+  function removeCart(targetSize, targetCode) {
+    console.log(targetCode, targetSize, "rmcart");
+    return setDataCart2((prevData) => {
+      return prevData.filter(
+        (item) => item.size !== targetSize || item.code !== targetCode
+      );
     });
   }
 
   useEffect(() => {
     calculateTotalCart();
+    dispatch(updateCart(dataCart2));
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [dataCart]);
+  }, [dataCart2]);
 
   return (
     <div className="lg:w-[1200px] w-full max-w-[1200px] mx-auto overflow-hidden">
@@ -141,7 +156,7 @@ function CartUniqlo() {
           <Nametag name="KERANJANG BELANJA" />
         </div>
         <p className="text-3xl font-bold lg:block hidden">KERANJANG BELANJA</p>
-        {dataCart.length === 0 ? (
+        {dataCart2.length === 0 ? (
           <>
             {loading ? (
               <p className="mx-3"> Loading...</p>
@@ -161,18 +176,19 @@ function CartUniqlo() {
               <p className="mx-3"> Loading...</p>
             ) : (
               <div className="flex flex-row flex-wrap lg:flex-nowrap w-full">
-                <div className="flex flex-col w-full">
-                  {dataCart.map((item, id) => (
+                <div className="flex flex-col w-full px-3.5">
+                  {dataCart2.map((item, id) => (
                     <div key={id}>
+                      {console.log(id, "id cart")}
                       <div className="flex flex-col w-full mb-6">
                         <img
-                          src={item.src}
+                          src={item.image}
                           alt=""
                           className="md:hidden mx-3 object-cover mb-3"
                         />
                         <div className="flex flex-row w-full">
                           <img
-                            src={item.src}
+                            src={item.image}
                             alt=""
                             className="hidden md:block object-cover"
                           />
@@ -184,10 +200,10 @@ function CartUniqlo() {
                                     {item.title}
                                   </p>
                                   <p className="text-lg mt-1 text-gray-500">
-                                    Kode Produk: {item.id_product}
+                                    Kode Produk: {item.code}
                                   </p>
                                   <p className="text-lg mt-1">
-                                    Warna: {item.warna}
+                                    Warna: {item.color}
                                   </p>
                                   <p className="text-lg mt-1">
                                     Ukuran: {item.size}
@@ -203,15 +219,16 @@ function CartUniqlo() {
                                   <div className="flex flex-col w-1/2">
                                     <p className="text-sm font-bold">JUMLAH</p>
                                     <Select
-                                      defaultValue={item.jumlah}
+                                      defaultValue={item.cartStock}
                                       w={"60%"}
                                       onClick={() => {
-                                        handleSelectClick(item.id);
+                                        handleSelectClick(item.size, item.code);
                                         // console.log(item.select.active);
                                       }}
                                       onChange={(e) => {
                                         changeJumlahCart(
-                                          item.id,
+                                          item.size,
+                                          item.code,
                                           e.target.value
                                         );
                                         setLoading(true);
@@ -247,7 +264,7 @@ function CartUniqlo() {
                                       SUBTOTAL : {""}
                                       <span>
                                         {formatCurrency(
-                                          item.price * item.jumlah
+                                          item.price * item.cartStock
                                         )}
                                       </span>
                                     </p>
@@ -256,7 +273,7 @@ function CartUniqlo() {
                               </div>
                               <GrFormClose
                                 onClick={() => {
-                                  removeCart(item.id);
+                                  removeCart(item.size, item.code);
                                   setLoading(true);
                                   setTimeout(() => {
                                     setLoading(false);
@@ -311,6 +328,10 @@ function CartUniqlo() {
                       LANJUTKAN KE PEMBAYARAN
                     </button>
                   </div>
+                  {/* <p>{JSON.stringify(cartRx.cart, null, 5)} data redux</p> */}
+                  {/* {console.log(dataCart2)} */}
+                  {console.log(cartRx)}
+                  {/* <p>{JSON.stringify(dataCart2, null, 5)} data redux</p> */}
                 </div>
               </div>
             )}
