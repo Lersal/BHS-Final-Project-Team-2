@@ -91,7 +91,7 @@ function CarouselProductsID({ dataImage }) {
     // create component carousel
     <div className="flex flex-row w-full">
       {/* 4 * 4 ga ada button next atau previous */}
-      <div className="flex flex-col w-48 ">
+      <div className="md:flex flex-col w-48 hidden">
         <div className="grid grid-cols-2 gap-3">
           {imgProducts
             .slice(incrementImg, incrementImg + 12)
@@ -124,17 +124,17 @@ function CarouselProductsID({ dataImage }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full  mx-8 relative">
+      <div className="flex flex-col w-full justify-normal  mx-8 relative">
         <img src={imgProducts[imgSlide].src} alt="" />
         <button
           onClick={() => leftSlide(imgSlide)}
-          className="absolute top-64 py-4 px-2 bg-[#f3f3f3] bg-opacity-25 hover:bg-gray-400 hover:opacity-30"
+          className="absolute md:top-64 top-32 py-4 px-2 bg-[#f3f3f3] bg-opacity-25 hover:bg-gray-400 hover:opacity-30"
         >
           <GrFormPrevious className="w-8 h-8" />
         </button>
         <button
           onClick={() => rightSlide(imgSlide)}
-          className="absolute top-64 right-0 py-4 px-2 bg-[#f3f3f3] bg-opacity-25 hover:bg-gray-400 hover:opacity-30"
+          className="absolute md:top-64 top-32 right-0 py-4 px-2 bg-[#f3f3f3] bg-opacity-25 hover:bg-gray-400 hover:opacity-30"
         >
           <GrFormNext className="w-8 h-8" />
         </button>

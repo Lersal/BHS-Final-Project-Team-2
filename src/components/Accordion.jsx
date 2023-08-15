@@ -20,7 +20,7 @@ AccordionChakra.propTypes = {
 
 function AccordionChakra({ deskripsi, ...props }) {
   return (
-    <Accordion {...props} allowMultiple mr={8}>
+    <Accordion {...props} allowMultiple>
       {deskripsi.map((item, i) => (
         <div key={i}>
           <AccordionItem>
@@ -33,7 +33,7 @@ function AccordionChakra({ deskripsi, ...props }) {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} mx={4}>
+            <AccordionPanel pb={4} mx={2.5}>
               <Box dangerouslySetInnerHTML={{ __html: item.text }} />
             </AccordionPanel>
           </AccordionItem>
