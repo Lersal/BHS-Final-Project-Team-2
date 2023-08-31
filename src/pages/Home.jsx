@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
+import Navbar from "../navbar-footer/Navbar";
+import Footer from "../components/Footer";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,7 +11,9 @@ import "swiper/css";
 function Home() {
   return (
     <div>
-      {/* section 1 */}x
+      {/* Navbar */}
+      <Navbar />
+      {/* section 1 */}
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -59,9 +63,13 @@ function Home() {
               alt=""
               className="w-8/12 h-auto"
             />
-            <div className="w-4/12 h-auto bg-indigo-500">
-              <h2>Menampilkan serial TV anime terkenal!</h2>
-              <div>My Hero Academia</div>
+            <div className="w-1/3 bg-white">
+              <div className="mt-40 mx-12">
+                <h2 className="text-2xl font-bold my-4">
+                  Menampilkan serial TV anime terkenal!
+                </h2>
+                <h2 className="text-2xl font-bold">My Hero Academia</h2>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -72,7 +80,7 @@ function Home() {
               alt=""
               className="w-8/12 h-auto"
             />
-            <div className="w-4/12 h-auto bg-indigo-500">Test</div>
+            <div className="w-4/12 h-auto bg-white">Test</div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -82,7 +90,7 @@ function Home() {
               alt=""
               className="w-8/12 h-auto"
             />
-            <div className="w-4/12 h-auto bg-indigo-500">Test</div>
+            <div className="w-4/12 h-auto bg-white">Test</div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -394,7 +402,7 @@ function Home() {
               alt=""
               className="w-2/3 h-auto"
             />
-            <div className="w-1/3 bg-purple-400">
+            <div className="w-1/3 bg-white">
               <div className="mt-40 mx-12">
                 <h2 className="text-2xl font-bold my-4">
                   Polo cepat kering berbahan pique yang lembut.
@@ -469,6 +477,218 @@ function Home() {
           </div>
         </SwiperSlide>
       </Swiper>
+      {/* Section 7 */}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={true}
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+      >
+        <SwiperSlide>
+          <img
+            src="https://im.uniqlo.com/global-cms/spa/resda9076b0b4025727183507b6db99ef5dfr.jpeg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://im.uniqlo.com/global-cms/spa/res5fb2c7fe63a2794b1a74aab108fa0bc9fr.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://im.uniqlo.com/global-cms/spa/rese0571453f95d933090e976c7b7302350fr.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://im.uniqlo.com/global-cms/spa/res3c74064ec1cc0cea543226b3bb170c1afr.jpg"
+            alt=""
+          />
+        </SwiperSlide>
+      </Swiper>
+      {/* Section 8 */}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={true}
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+      >
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/res190759ba49295cd77fd0f2d6094c1536fr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2">
+                Mame Kurogouchi
+              </h2>
+              <p className="text-white my-4">
+                Koleksi yang mengajakmu untuk bergerak bebas
+              </p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/res6e634491884217fe23f869b4aea47555fr.jpg"
+              alt=""
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2">
+                JW Anderson
+              </h2>
+              <p className="text-white my-4">Menampilkan gaya hidup sporty.</p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/res1d2e6b8dc768f0c8656bcc6e7875989efr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2">
+                INES DE LA FRESSANGE
+              </h2>
+              <p className="text-white my-4">
+                Temukan koleksi Ines de la Fressange di sini.
+              </p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/rescd29c680a851488410a7e3acd7138910fr.jpg"
+              alt=""
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2">J Brand</h2>
+              <p className="text-white my-4">Jeans stylish masa kini.</p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      {/* Section 9 */}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={true}
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+      >
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/resc71af24aed491fee2d7508aaa41a6d47fr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute top-28 left-16">
+              <h2 className="text-4xl text-white font-bold my-2 drop-shadow-2xl">
+                Spring/Summer 2023 UNIQLO
+              </h2>
+              <h2 className="text-4xl text-white font-bold my-2 drop-shadow-2xl">
+                Season Catalog
+              </h2>
+              <p className="text-white my-4 drop-shadow-md">
+                Seni Kehidupan Sehari-hari
+              </p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50 drop-shadow-2xl">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/res4df6354a62eb79e95220c1be5e5ecc76fr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2 drop-shadow-md">
+                LifeWear Magazine Issue 08
+              </h2>
+              <p className="text-white my-4">
+                Sebuah majalah untuk menyampaikan konsep LifeWear. Konsep edisi
+                ke-8 adalah "Sebuah seni kehidupan sehari-hari".
+              </p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/resc8ee5b536f254f5835146d1d94f7711bfr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2">
+                Koleksi sederhana &amp; berkualitas untuk sehari-hari.
+              </h2>
+              <p className="text-white my-4">Masterpiece 2023 Spring/Summer</p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative">
+            <img
+              src="https://im.uniqlo.com/global-cms/spa/res05662a097e23de506f14464427c133e8fr.jpg"
+              alt=""
+              className="brightness-90"
+            />
+            <div className="absolute bottom-1/3 left-16">
+              <h2 className="text-4xl text-white font-bold my-2 shadow-md">
+                UNIQLO Update
+              </h2>
+              <p className="text-white my-4">
+                Telusuri produk, koleksi, dan update terbaru kami di sini.
+              </p>
+              <button className="p-3 mt-2 bg-white opacity-80 font-bold hover:opacity-50">
+                SELENGKAPNYA
+              </button>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+
+      <Footer />
     </div>
   );
 }

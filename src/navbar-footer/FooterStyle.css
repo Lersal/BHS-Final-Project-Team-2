@@ -1,0 +1,39 @@
+/* footer {
+  background-color: rgb(248, 252, 255);
+  display: block;
+  width: 100%;
+}
+
+footer div.menu {
+  display: flex;
+  justify-content: center;
+}
+
+footer div.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  line-height: 2rem;
+}
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+  line-height: 1rem;
+}
+
+div.icon {
+  display: inline block;
+  width: 14rem;
+}
+
+div.icon a {
+  padding-right: 1rem;
+  color: gray;
+}
+
+div.footer-bawah {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+} */
