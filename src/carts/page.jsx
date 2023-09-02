@@ -6,6 +6,8 @@ import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import { formatCurrency } from "../utils/formatCurrency";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCart } from "../stores/slices/cartSlice";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function CartUniqlo() {
   const cartRx = useSelector((state) => state.cartSlice);
@@ -151,6 +153,7 @@ function CartUniqlo() {
 
   return (
     <div className="lg:w-[1200px] w-full max-w-[1200px] mx-auto overflow-hidden">
+      <Header />
       <div className="flex flex-col justify-between w-full gap-9">
         <div className="mx-3 lg:mx-0">
           <Nametag name="KERANJANG BELANJA" />
@@ -338,6 +341,7 @@ function CartUniqlo() {
           </>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
