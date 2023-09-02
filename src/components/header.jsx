@@ -15,7 +15,7 @@ function Header() {
               <a href="">pencari lokasi toko</a>
             </div>
             <div>
-              <span>
+              <span className="mr-2">
                 <button>English</button>
               </span>
               <span>
