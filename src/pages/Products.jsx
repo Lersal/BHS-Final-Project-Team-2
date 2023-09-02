@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Products(props) {
@@ -20,6 +21,7 @@ export default function Products(props) {
 
   return (
     <section>
+      <Header />
       <div className="px-10 py-5 m-auto max-w-5xl grid grid-cols-4 gap-5">
         {dataProducts.map((element) => (
           <div className="mx-2 my-2 px-1 rounded shadow" key={element.id}>
@@ -28,14 +30,16 @@ export default function Products(props) {
             </div>
             <div className="grid  row-span-full border-t-2 px-1 ">
               <div className="flex justify-between text-zinc-400 text-sm font-bold mt-2 ">
-                  <span>{element.category}</span>
-                  <span>{element.tb}</span>
+                <span>{element.category}</span>
+                <span>{element.tb}</span>
               </div>
               <div className="h-24 w-auto">
-                <h1 className="text-md font-bold text-zinc-600 my-2 font-sans ">{element.title}</h1>
+                <h1 className="text-md font-bold text-zinc-600 my-2 font-sans ">
+                  {element.title}
+                </h1>
               </div>
-              
-              <div className="my-3"> 
+
+              <div className="my-3">
                 <span className="text-lg font-bold font-sans text-zinc-800 text-center">
                   {Number(element.price).toLocaleString("id-ID", {
                     currency: "IDR",
@@ -44,11 +48,10 @@ export default function Products(props) {
                 </span>
               </div>
             </div>
-           
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 }

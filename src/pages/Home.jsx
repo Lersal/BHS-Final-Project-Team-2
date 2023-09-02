@@ -4,13 +4,13 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Navbar from "../navbar-footer/Navbar";
 import Footer from "../components/Footer";
-
 // Import Swiper styles
 import "swiper/css";
 
 function Home() {
   return (
     <div>
+      <Header />
       {/* Navbar */}
       <Navbar />
       {/* section 1 */}
