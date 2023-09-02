@@ -10,10 +10,10 @@ function Header() {
         <div className="container flex items-center justify-end px-40 h-10 font-normal">
           <div className="flex gap-3 items-center">
             <div>
-              <a href="">Bantuan</a>
+              <Link to="">Bantuan</Link>
             </div>
             <div>
-              <a href="">pencari lokasi toko</a>
+              <Link to="/maps">Pencari Lokasi Toko</Link>
             </div>
             <div>
               <span className="mr-2">
@@ -29,8 +29,8 @@ function Header() {
       <header className="bg-white top-0 left-0 w-full border-b border-slate-400 flex">
         <div className="container flex items-center justify-between px-40 h-20">
           <div className="flex">
-            <h1>
-              <a href="">
+            <h1 className="ml-16">
+              <Link to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 90 40"
@@ -48,12 +48,12 @@ function Header() {
                     </g>
                   </g>
                 </svg>
-              </a>
+              </Link>
             </h1>
             <ul className="flex justify-start gap-6 items-center ml-10 font-bold">
               <li className="group">
                 <a href="">WANITA</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -338,7 +338,7 @@ function Header() {
               </li>
               <li className="group">
                 <a href="">PRIA</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -583,7 +583,7 @@ function Header() {
               </li>
               <li className="group">
                 <a href="">ANAK</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -762,7 +762,7 @@ function Header() {
               </li>
               <li className="group">
                 <a href="">BAYI</a>
-                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white mt-7 left-0">
+                <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
                       <div className="flex flex-wrap w-full">
@@ -934,24 +934,22 @@ function Header() {
           <div className="flex items-center justify-center">
             <ul className="flex gap-10">
               <li>
-                <button className="">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width={30}
-                      height={30}
-                    >
-                      <g id="function_jp">
-                        <path d="M4.57,10.59a6,6,0,1,1,6,6A6,6,0,0,1,4.57,10.59Zm11.91,4.78a7.6,7.6,0,1,0-1.11,1.11l4.29,4.29a.78.78,0,0,0,1.11-1.11Z" />
-                      </g>
-                    </svg>
-                  </span>
-                </button>
+                <Link to="/maps">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width={30}
+                    height={30}
+                  >
+                    <g id="function_jp">
+                      <path d="M4.57,10.59a6,6,0,1,1,6,6A6,6,0,0,1,4.57,10.59Zm11.91,4.78a7.6,7.6,0,1,0-1.11,1.11l4.29,4.29a.78.78,0,0,0,1.11-1.11Z" />
+                    </g>
+                  </svg>
+                </Link>
                 {/* <img src="dist/img/search.svg" alt="" width="24" height="24" /> */}
               </li>
               <li>
-                <Link to= "/Login">
+                <Link to="/Login">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -967,23 +965,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <a href="">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width={24}
-                    height={24}
-                  >
-                    <path
-                      d="M12,22.5c-0.2,0-0.4-0.1-0.6-0.2L9.9,21c-3.6-3.2-7.3-6.6-8.4-10.1c-1.3-4.1,0.4-8,4-9.2 c2.3-0.8,4.7,0,6.5,1.8c1.8-1.9,4.2-2.6,6.5-1.8c3.6,1.2,5.3,5.1,4,9.2c-1.1,3.5-4.8,6.9-8.4,10.1l-1.5,1.3 C12.4,22.5,12.2,22.5,12,22.5z M7.4,3.2C7,3.2,6.5,3.3,6.1,3.4c-2.6,0.9-3.8,3.8-2.9,6.9c1,3,4.5,6.2,7.9,9.3l0.8,0.8l0.8-0.8 c3.4-3.1,7-6.3,7.9-9.3c1-3.1-0.2-6.1-2.9-6.9c-2.8-0.9-4.7,1.4-5.2,2.1c-0.2,0.2-0.4,0.4-0.7,0.4l0,0c-0.3,0-0.6-0.1-0.7-0.4 C10.8,4.9,9.4,3.2,7.4,3.2z"
-                      fill="black"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
+                <Link to="/cart">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
@@ -995,7 +977,7 @@ function Header() {
                       d="M18.1,22.5c-1.5,0-2.6-1.2-2.6-2.6c0-0.3,0-0.6,0.2-0.9l0-0.1H9.5l0,0.1c0.1,0.3,0.2,0.6,0.2,0.9 c0,1.4-1.2,2.6-2.6,2.6c-1.5,0-2.6-1.2-2.6-2.6c0-0.3,0-0.6,0.2-0.9l0-0.1H4.5l-0.1,0c-1.3-0.1-2.3-1.3-2.3-2.6s1-2.4,2.3-2.6l0.1,0 V3.1H0.9V1.5h5.2V4l16.3,1.2c0.2,0,0.5,0.1,0.6,0.3c0.1,0.2,0.2,0.4,0.1,0.7l-2.4,8.5c-0.1,0.3-0.4,0.6-0.8,0.6H4.7 c-0.6,0-1,0.5-1,1s0.5,1,1,1h13.6l0.1,0c1.3,0.1,2.3,1.3,2.3,2.6C20.7,21.3,19.5,22.5,18.1,22.5z M18.1,18.9c-0.6,0-1,0.5-1,1 s0.5,1,1,1s1-0.5,1-1S18.6,18.9,18.1,18.9z M7.1,18.9c-0.6,0-1,0.5-1,1s0.5,1,1,1s1-0.5,1-1S7.7,18.9,7.1,18.9z M6.1,13.6h13.2l2-7 L6.1,5.6V13.6z"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

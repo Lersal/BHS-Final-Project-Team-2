@@ -19,7 +19,7 @@ function App() {
             <Routes>
               <Route path="/maps" element={<AppLocation />} />
               <Route path="/" element={<Home />} />
-              <Route path="/products/id" element={<ProductsByID />} />
+              <Route path="/products/:id" element={<ProductsByID />} />
               <Route path="/products" element={<Products />} />
               <Route path="/cart" element={<CartUniqlo />} />
               <Route path="/login" element={<Login />} />
