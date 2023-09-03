@@ -7,7 +7,7 @@ import { formatCurrency } from "../utils/formatCurrency";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCart } from "../stores/slices/cartSlice";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/header";
 
 function CartUniqlo() {
   const cartRx = useSelector((state) => state.cartSlice);
