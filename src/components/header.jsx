@@ -7,7 +7,7 @@ function Header() {
       {/* header start */}
 
       <header className="bg-stone-100 top-0 left-0 w-full items-center flex">
-        <div className="container flex items-center justify-end px-40 h-10 font-normal">
+        <div className="container flex items-center justify-end px-0 h-10 font-normal">
           <div className="flex gap-3 items-center">
             <div>
               <Link to="">Bantuan</Link>
@@ -16,18 +16,20 @@ function Header() {
               <Link to="/maps">Pencari Lokasi Toko</Link>
             </div>
             <div>
-              <span className="mr-2">
-                <button>English</button>
+              <span>
+                <button className="pr-1">English</button>
               </span>
               <span>
-                <button>Bahasa Indonesia</button>
+                <button className="pl-1 border-l-2 border-black font-bold ">
+                  Bahasa Indonesia
+                </button>
               </span>
             </div>
           </div>
         </div>
       </header>
       <header className="bg-white top-0 left-0 w-full border-b border-slate-400 flex">
-        <div className="container flex items-center justify-between px-40 h-20">
+        <div className="container flex items-center justify-between pl-2 pr-0 h-16">
           <div className="flex">
             <h1 className="ml-16">
               <Link to="/">
