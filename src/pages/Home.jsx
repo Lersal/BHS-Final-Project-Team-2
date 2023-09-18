@@ -3,7 +3,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Footer from "../components/Footer";
-import Header from "../components/header";
+import Header from "../components/Header";
 import { Link } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
