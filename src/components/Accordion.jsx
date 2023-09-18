@@ -32,6 +32,7 @@ function AccordionChakra({
   textAlignDirection,
   ...props
 }) {
+  console.log(deskripsi);
   return (
     <Accordion {...props} allowMultiple>
       {deskripsi.map((item, i) => (
@@ -60,7 +61,7 @@ function AccordionChakra({
                 />
               ) : (
                 <div className="flex flex-col gap-3 items-center">
-                  {item.children.map((text, i) => (
+                  {item.children?.map((text, i) => (
                     <p key={i} className="text-sm text-gray-400">
                       {text.title}
                     </p>

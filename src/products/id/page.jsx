@@ -203,6 +203,7 @@ function ProductsByID() {
           Dicuci dengan mesin menggunakan air dingin, Tidak boleh dilakukan dry
           clean, Keringkan dengan mesin pada suhu rendah. - Beberapa warna
           produk mungkin tidak tersedia.`,
+          children: ["test", "test"],
         },
       ],
     },
@@ -353,6 +354,7 @@ function ProductsByID() {
             <AccordionChakra
               className="md:mt-4 md:mr-8 "
               deskripsi={dataProducts[0].deskripsi}
+              useInnerHtml={true}
             />
           </div>
           <div className="flex flex-col w-full lg:w-[60%] px-4 mt-4 mb-16 lg:mb-0 lg:mt-0 lg:ml-10">
