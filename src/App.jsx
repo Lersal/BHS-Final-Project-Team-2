@@ -9,7 +9,6 @@ import { Provider } from "react-redux";
 import { persistor, store } from "./stores";
 import { PersistGate } from "redux-persist/integration/react";
 import Products from "./pages/Products";
-import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
               <Route path="/cart" element={<CartUniqlo />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/checkout" element={<Checkout />} />
             </Routes>
           </BrowserRouter>
         </PersistGate>

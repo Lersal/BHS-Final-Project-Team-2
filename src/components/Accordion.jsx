@@ -32,7 +32,6 @@ function AccordionChakra({
   textAlignDirection,
   ...props
 }) {
-  console.log(deskripsi);
   return (
     <Accordion {...props} allowMultiple>
       {deskripsi.map((item, i) => (

@@ -81,7 +81,7 @@ function Footer() {
   return (
     <>
       <div className="bg-[#fafafa] border mt-24 md:px-0 px-4">
-        <div className="flex md:flex-nowrap flex-wrap flex-row w-full  max-w-[1200px] mx-auto  py-16">
+        <div className="flex md:flex-nowrap flex-wrap flex-row w-full  max-w-[1200px] mx-auto pl-6 pb-6 pt-8">
           <div className="flex flex-row  items-center w-full">
             <div className="flex flex-col md:gap-0 gap-3 md:text-start text-center mb-4">
               <h1 className="text-2xl font-semibold">
@@ -119,27 +119,27 @@ function Footer() {
       </div>
       {/* about cs contact */}
       <div className="bg-[#fafafa]  border border-t-0 md:px-0 px-4">
-        <div className="hidden md:grid grid-cols-4 gap-28 max-w-[1200px] mx-auto py-16">
+        <div className="hidden md:grid grid-cols-4 gap-28 max-w-[1200px] mx-auto pl-6 py-6">
           <div className="flex flex-col leading-3 gap-2">
             <h1 className="text-lg font-semibold mb-3">ABOUT</h1>
-            <span className="py-2 text-gray-500">Our Purpose</span>
-            <span className="py-2 text-gray-500">Careers</span>
-            <span className="py-2 text-gray-500">Affiliates</span>
-            <span className="py-2 text-gray-500">Press</span>
-            <span className="py-2 text-gray-500">Stores</span>
+            <span className="py-1 text-gray-500">Our Purpose</span>
+            <span className="py-1 text-gray-500">Careers</span>
+            <span className="py-1 text-gray-500">Affiliates</span>
+            <span className="py-1 text-gray-500">Press</span>
+            <span className="py-1 text-gray-500">Stores</span>
           </div>
           <div className="flex flex-col leading-3 gap-2">
             <h1 className="text-lg font-semibold mb-3">CUSTOMER SERVICE</h1>
-            <span className="py-2 text-gray-500">Help</span>
-            <span className="py-2 text-gray-500">Shipping</span>
-            <span className="py-2 text-gray-500">Returns</span>
-            <span className="py-2 text-gray-500">Payments</span>
-            <span className="py-2 text-gray-500">Your Order</span>
+            <span className="py-1 text-gray-500">Help</span>
+            <span className="py-1 text-gray-500">Shipping</span>
+            <span className="py-1 text-gray-500">Returns</span>
+            <span className="py-1 text-gray-500">Payments</span>
+            <span className="py-1 text-gray-500">Your Order</span>
           </div>
           <div className="flex flex-col leading-3 gap-2">
             <h1 className="text-lg font-semibold mb-3">CONTACT US</h1>
-            <span className="py-2 text-gray-500">+1 (202) 769-2427</span>
-            <span className="py-2 text-gray-500">Email us</span>
+            <span className="py-1 text-gray-500">+1 (202) 769-2427</span>
+            <span className="py-1 text-gray-500">Email us</span>
           </div>
           <div className="flex flex-col leading-3 gap-4">
             <div className="flex flex-row items-center gap-2">
@@ -181,7 +181,7 @@ function Footer() {
       </div>
       {/* end */}
       <div className="bg-[#fafafa]  border border-t-0 md:px-0 px-4">
-        <div className="flex flex-row text-center justify-center md:justify-start md:text-start max-w-[1200px] mx-auto py-10">
+        <div className="flex flex-row text-center justify-center md:justify-start md:text-start max-w-[1200px] mx-auto pl-6 py-6">
           <div className="flex flex-row">
             <div className="flex md:flex-row flex-col-reverse  gap-5">
               <img src="/svg/end.svg" alt="" className="h-4 mt-2.5" />

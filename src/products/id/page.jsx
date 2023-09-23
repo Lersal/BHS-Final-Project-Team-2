@@ -9,6 +9,9 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import { useDispatch, useSelector } from "react-redux";
 import { addCart, history } from "../../stores/slices/cartSlice";
 import BasicUsage from "../../components/Modal";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 function ProductsByID() {
   const selectRef = useRef(null);
 
@@ -337,6 +340,7 @@ function ProductsByID() {
 
   return (
     <div className="lg:w-[1200px] w-full max-w-[1200px] mx-auto overflow-hidden">
+      <Header />
       <div className="flex flex-col justify-between w-full gap-9">
         <div className="mx-3 lg:mx-0">
           <Nametag name="KOLEKSI ATASAN / T-Shirt Soft Touch Kerah Turtle Lengan Panjang" />
@@ -547,6 +551,7 @@ function ProductsByID() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

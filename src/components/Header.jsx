@@ -6,7 +6,7 @@ function Header() {
     <div>
       {/* header start */}
 
-      <header className="bg-stone-100 top-0 left-0 w-full items-center flex">
+      <header className="bg-stone-100 top-  0 left-0 w-full items-center flex">
         <div className="container flex items-center justify-end px-0 h-10 font-normal">
           <div className="flex gap-3 items-center">
             <div>
@@ -20,7 +20,7 @@ function Header() {
                 <button className="pr-1">English</button>
               </span>
               <span>
-                <button className="pl-1 border-l-2 border-black font-bold ">
+                <button className="pl-1 pr-2 border-l-2 border-black font-bold ">
                   Bahasa Indonesia
                 </button>
               </span>
@@ -54,7 +54,7 @@ function Header() {
             </h1>
             <ul className="flex justify-start gap-6 items-center ml-10 font-bold">
               <li className="group">
-                <a href="">WANITA</a>
+                <Link to="/products">WANITA</Link>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -63,283 +63,295 @@ function Header() {
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             ATASAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Atasan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">T-shirt Lengan Pendek</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">T-shirt Lengan Panjang</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Atasan Crop</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Bratop</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">UT(Graphic T-Shirt)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Sweat &amp; JAket Hodie</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemaja &amp; blus (Lengan Pendek)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemaja &amp; blus (Lengan Panjang)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Cardigan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sweater</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">PEACE FOR ALL</a>
-                            </li>
-                            <h3 className="font-bold text-lg mt-5 mb-4">
-                              GAUN
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Gaun</a>
-                            </li>
-                            <h3 className="font-bold text-lg mt-5 mb-4">
-                              MODEST WEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Modest Wear</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Atasan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">T-shirt Lengan Pendek</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">T-shirt Lengan Panjang</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Atasan Crop</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Bratop</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">UT(Graphic T-Shirt)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Sweat &amp; JAket Hodie</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kemaja &amp; blus (Lengan Pendek)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">
+                                  Kemaja &amp; blus (Lengan Panjang)
+                                </a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Cardigan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sweater</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">PEACE FOR ALL</a>
+                              </li>
+                              <h3 className="font-bold text-lg mt-5 mb-4">
+                                GAUN
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Gaun</a>
+                              </li>
+                              <h3 className="font-bold text-lg mt-5 mb-4">
+                                MODEST WEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Modest Wear</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             LUARAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Luaran</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Blouson &amp; Jaket Parka</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Jaket &amp; Blazer</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AirSense</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Mantel</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Ultra Light Down</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              DALAMAN
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Dalaman</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Bra Tanpa Kawat</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Bratop</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRism</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">HEATTECH</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Dalaman Atas</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Legging</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Dalam</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Kaki</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              SPORT UTILITY WEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sport Utility Wear</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Luaran</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Blouson &amp; Jaket Parka</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Jaket &amp; Blazer</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AirSense</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Mantel</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Ultra Light Down</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                DALAMAN
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Dalaman</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Bra Tanpa Kawat</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Bratop</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRism</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">HEATTECH</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Dalaman Atas</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Legging</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Dalam</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Kaki</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                SPORT UTILITY WEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sport Utility Wear</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             BAWAHAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Baawahan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Jeans</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Legging</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Lebar</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Sweat</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Casual</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Panjang &amp;Celana Ankle</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Pendek &amp; Rok Celana</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              LOUNGEWEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Loungewear</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Piyama</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">RELACO</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sandal Rumah</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              PAKAIAN MATERNITY
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Pakaian Maternity</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Baawahan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Jeans</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Legging</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Lebar</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Sweat</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Casual</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Panjang &amp;Celana Ankle</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Pendek &amp; Rok Celana</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                LOUNGEWEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Loungewear</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Piyama</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">RELACO</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sandal Rumah</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                PAKAIAN MATERNITY
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Pakaian Maternity</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             ROK
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Rok</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              AKSESORIS
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Aksesoris</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Topi</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sarung Tangan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Tas</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Syal</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Ikat Pinggang</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Payung</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kacamata Hitam</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Lainnya</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Rok</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                AKSESORIS
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Aksesoris</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Topi</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sarung Tangan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Tas</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Syal</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Ikat Pinggang</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Payung</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kacamata Hitam</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Lainnya</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                       </div>
                       <div className="border border-l border-stone-400 mt-7" />
                       <div className="mt-5">
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
-                        <ul>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">New arrivals</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Limited Offers</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Value Buy</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Coming Soon</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Featured News</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">UT Graphic T-Shirts</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">STYLING BOOK</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">About LifeWear</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Extra Size (Online exclusive)</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Pembelian Jumlah Besar</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Kirim Kado</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">PEACE FOR ALL</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Special collaboration
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Uniqlo and Mame Kurogouchi</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">UNIQLO C</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">INES DE LA FRESSANGE</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Uniqlo U</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Special Collaboration</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Browse
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Koleksi Wanita</a>
-                          </li>
-                        </ul>
+                        <Link to="/products">
+                          <ul>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">New arrivals</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Limited Offers</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Value Buy</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Coming Soon</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Featured News</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">UT Graphic T-Shirts</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">STYLING BOOK</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">About LifeWear</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Extra Size (Online exclusive)</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Pembelian Jumlah Besar</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Kirim Kado</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">PEACE FOR ALL</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Special collaboration
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Uniqlo and Mame Kurogouchi</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">UNIQLO C</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">INES DE LA FRESSANGE</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Uniqlo U</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Special Collaboration</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Browse
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Koleksi Wanita</a>
+                            </li>
+                          </ul>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li className="group">
-                <a href="">PRIA</a>
+                <Link to="/products">PRIA</Link>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -348,243 +360,253 @@ function Header() {
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             ATASAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Atasan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">T-shirt Lengan Pendek</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">T-shirt Lengan Panjang</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">UT(Graphic T-Shirt)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Polo</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Sweat &amp; Jaket Hodie</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemeja Kasual (Lengan Pendek)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemeja Kasual (Lengan Panjang)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemeja Formal</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sweater &amp; Cardigan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">PEACE FOR ALL</a>
-                            </li>
-                            <h3 className="font-bold text-lg mt-5 mb-4">
-                              LOUNGEWEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Loungewear</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Piyama</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sandal Rumah</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Atasan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">T-shirt Lengan Pendek</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">T-shirt Lengan Panjang</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">UT(Graphic T-Shirt)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Polo</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Sweat &amp; Jaket Hodie</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kemeja Kasual (Lengan Pendek)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kemeja Kasual (Lengan Panjang)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kemeja Formal</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sweater &amp; Cardigan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">PEACE FOR ALL</a>
+                              </li>
+                              <h3 className="font-bold text-lg mt-5 mb-4">
+                                LOUNGEWEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Loungewear</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Piyama</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sandal Rumah</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             LUARAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Luaran</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Blouson &amp; Jaket Parka</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Jaket &amp; Blazer</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AirSense</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Ultra Light Down</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              AKSESORIS
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Aksesoris</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Topi</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sarung Tangan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Tas</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Syal</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Ikat Pinggang</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Payung</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kacamata Hitam</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Lainnya</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Luaran</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Blouson &amp; Jaket Parka</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Jaket &amp; Blazer</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AirSense</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Ultra Light Down</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                AKSESORIS
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Aksesoris</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Topi</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sarung Tangan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Tas</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Syal</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Ikat Pinggang</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Payung</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kacamata Hitam</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Lainnya</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             BAWAHAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Baawahan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Relax &amp; Lebar</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Jeans</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Chino</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRSense</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Sweat</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Panjang &amp; Ankle</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Pendek</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              SPORT UTILITY WEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sport Utility Wear</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Baawahan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Relax &amp; Lebar</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Jeans</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Chino</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRSense</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Sweat</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Panjang &amp; Ankle</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Pendek</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                SPORT UTILITY WEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sport Utility Wear</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             DALAMAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Dalaman</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRism</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">HEATTECH</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Dalaman Atas</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Legging</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Dalam</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Kaki</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Dalaman</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRism</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">HEATTECH</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Dalaman Atas</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Legging</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Dalam</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Kaki</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                       </div>
                       <div className="border border-l border-stone-400 mt-7" />
                       <div className="mt-5">
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
-                        <ul>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">New arrivals</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Limited Offers</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Value Buy</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Coming Soon</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Featured News</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">UT Graphic T-Shirts</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">STYLING BOOK</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">About LifeWear</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Extra Size (Online exclusive)</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Pembelian Jumlah Besar</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Kirim Kado</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">PEACE FOR ALL</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Special collaboration
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Kaws x UT</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Uniqlo U</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Special Collaboration</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">
-                              Roger Federer collection By JW ANDERSON
-                            </a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Browse
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Koleksi Pria</a>
-                          </li>
-                        </ul>
+                        <Link to="/products">
+                          <ul>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">New arrivals</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Limited Offers</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Value Buy</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Coming Soon</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Featured News</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">UT Graphic T-Shirts</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">STYLING BOOK</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">About LifeWear</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Extra Size (Online exclusive)</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Pembelian Jumlah Besar</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Kirim Kado</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">PEACE FOR ALL</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Special collaboration
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Kaws x UT</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Uniqlo U</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Special Collaboration</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">
+                                Roger Federer collection By JW ANDERSON
+                              </a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Browse
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Koleksi Pria</a>
+                            </li>
+                          </ul>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li className="group">
-                <a href="">ANAK</a>
+                <Link to="/products">ANAK</Link>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -593,177 +615,187 @@ function Header() {
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             ATASAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Atasan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">T-shirt</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">UT(Graphic T-Shirt)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Sweat &amp; Jaket Hodie</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kemeja &amp; Blous</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              DALAMAN
-                            </h3>
-                          </ul>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Dalaman</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Dalaman</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRism</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">HEATTECH</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Bra</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Legging &amp; Celana Ketat</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Dalam</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Kaki</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Atasan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">T-shirt</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">UT(Graphic T-Shirt)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Sweat &amp; Jaket Hodie</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kemeja &amp; Blous</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                DALAMAN
+                              </h3>
+                            </ul>
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Dalaman</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Dalaman</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRism</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">HEATTECH</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Bra</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Legging &amp; Celana Ketat</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Dalam</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Kaki</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             LUARAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Luaran</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              LOUNGEWEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Loungewear</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Loungewear &amp; Piyama</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">RELACO</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Luaran</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                LOUNGEWEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Loungewear</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Loungewear &amp; Piyama</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">RELACO</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             BAWAHAN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Baawahan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Panjang</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Celana Pendek</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Rok</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              AKSESORIS
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Aksesoris</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Lainnya</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Baawahan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Panjang</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Celana Pendek</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Rok</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                AKSESORIS
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Aksesoris</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Lainnya</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             GAUN
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Gaun</a>
-                            </li>
-                            <h3 className="font-semibold text-lg mt-5 mb-4">
-                              SPORT UTILITY WEAR
-                            </h3>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Sport Utility</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Gaun</a>
+                              </li>
+                              <h3 className="font-semibold text-lg mt-5 mb-4">
+                                SPORT UTILITY WEAR
+                              </h3>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Sport Utility</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                       </div>
                       <div className="border border-l border-stone-400 mt-7" />
                       <div className="mt-5">
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
-                        <ul>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">New arrivals</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Limited Offers</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Value Buy</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Coming Soon</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Featured News</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">UT Graphic T-Shirts</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">STYLING BOOK</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">About LifeWear</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Extra Size (Online exclusive)</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Pembelian Jumlah Besar</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Kirim Kado</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Special collaboration
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Special Collaboration</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Browse
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Koleksi Anak</a>
-                          </li>
-                        </ul>
+                        <Link to="/products">
+                          <ul>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">New arrivals</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Limited Offers</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Value Buy</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Coming Soon</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Featured News</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">UT Graphic T-Shirts</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">STYLING BOOK</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">About LifeWear</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Extra Size (Online exclusive)</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Pembelian Jumlah Besar</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Kirim Kado</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Special collaboration
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Special Collaboration</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Browse
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Koleksi Anak</a>
+                            </li>
+                          </ul>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li className="group">
-                <a href="">BAYI</a>
+                <Link to="/products">BAYI</Link>
                 <div className="dialog-menu hidden group-hover:block absolute border-t-2 border-stone-400 w-full h-full bg-white left-0">
                   <div className="container px-40">
                     <div className="flex gap-10">
@@ -772,160 +804,168 @@ function Header() {
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             NEWBORN (6-18 BULAN)
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Pakaian Newborn</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Aksesoris</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Pakaian Newborn</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Aksesoris</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             NEWBORN (18-24 BULAN)
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Newborn</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Luaran</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">One Piece</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Atasan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Baju Terusan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Legging</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">UT(Graphic T-Shirt)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Gaun</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRism</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Kaki</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Aksesoris</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Newborn</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Luaran</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">One Piece</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Atasan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Baju Terusan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Legging</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">UT(Graphic T-Shirt)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Gaun</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRism</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Kaki</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Aksesoris</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                         <div className="w-3/12">
                           <h3 className="font-semibold text-lg mt-5 mb-4">
                             TODDLER (3-4 YEAR)
                           </h3>
-                          <ul>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Koleksi Balita</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Atasan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Luaran</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Bawahan</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Piyama</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Gaun</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">UT(Graphic T-Shirt)</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">HEATTECH</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Dalaman Atas</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">AIRism</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Kaos Kaki</a>
-                            </li>
-                            <li className="mb-4 text-sm font-normal">
-                              <a href="">Aksesoris</a>
-                            </li>
-                          </ul>
+                          <Link to="/products">
+                            <ul>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Koleksi Balita</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Atasan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Luaran</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Bawahan</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Piyama</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Gaun</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">UT(Graphic T-Shirt)</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">HEATTECH</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Dalaman Atas</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">AIRism</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Kaos Kaki</a>
+                              </li>
+                              <li className="mb-4 text-sm font-normal">
+                                <a href="">Aksesoris</a>
+                              </li>
+                            </ul>
+                          </Link>
                         </div>
                       </div>
                       <div className="border border-l border-stone-400 mt-5" />
                       <div className="mt-5">
                         <h3 className="font-semibold text-lg mb-4">Featured</h3>
-                        <ul>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">New arrivals</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Limited Offers</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Value Buy</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Coming Soon</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Featured News</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">UT Graphic T-Shirts</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">STYLING BOOK</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">About LifeWear</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Extra Size (Online exclusive)</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Pembelian Jumlah Besar</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Kirim Kado</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">PEACE FOR ALL</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Special collaboration
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">
-                              Roger Federer collection By JW ANDERSON
-                            </a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Uniqlo U</a>
-                          </li>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Special Collaboration</a>
-                          </li>
-                          <h3 className="font-semibold text-lg mt-5 mb-4">
-                            Browse
-                          </h3>
-                          <li className="mb-4 text-sm font-normal">
-                            <a href="">Koleksi Pria</a>
-                          </li>
-                        </ul>
+                        <Link to="/products">
+                          <ul>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">New arrivals</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Limited Offers</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Value Buy</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Coming Soon</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Featured News</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">UT Graphic T-Shirts</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">STYLING BOOK</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">About LifeWear</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Extra Size (Online exclusive)</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Pembelian Jumlah Besar</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Kirim Kado</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">PEACE FOR ALL</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Special collaboration
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">
+                                Roger Federer collection By JW ANDERSON
+                              </a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Uniqlo U</a>
+                            </li>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Special Collaboration</a>
+                            </li>
+                            <h3 className="font-semibold text-lg mt-5 mb-4">
+                              Browse
+                            </h3>
+                            <li className="mb-4 text-sm font-normal">
+                              <a href="">Koleksi Pria</a>
+                            </li>
+                          </ul>
+                        </Link>
                       </div>
                     </div>
                   </div>

@@ -20,9 +20,6 @@ function BasicUsage({ actionAdd }) {
   const cartRx = useSelector((state) => state.cartSlice);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log(cartRx, "data redux");
-  }, [cartRx]);
   return (
     <>
       <Button
