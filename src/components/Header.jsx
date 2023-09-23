@@ -6,7 +6,7 @@ function Header() {
     <div>
       {/* header start */}
 
-      <header className="bg-stone-100 top-  0 left-0 w-full items-center flex">
+      <header className="bg-stone-100 top-0 left-0 w-full items-center flex">
         <div className="container flex items-center justify-end px-0 h-10 font-normal">
           <div className="flex gap-3 items-center">
             <div>
